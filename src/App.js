@@ -11,7 +11,6 @@ import StudentLogin from "./pages/login-pages/StudentLogin";
 import Clgsearch from "./pages/college/Clgsearch";
 import Addcollege from "./pages/college/Addcollege";
 import SignUp from "./pages/login-pages/signUp";
-
 import Home from "./pages/canteen/Home.js";
 import Context from "./Context";
 import { useState } from "react";
