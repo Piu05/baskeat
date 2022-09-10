@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500&family=Poppins:wght@100&display=swap");
+.stathome__container {
+  background-color: #fae681;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+ 
+}
+.stathome__container h1 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Dosis", sans-serif;
+  color: #3fbdb3;
+  font-size:60px;
+}
+.stathome__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  border-radius: 3rem;
+  background-color: #6da7bc;
+  padding: 3rem;
+  /* margin: 2rem; */
+  justify-content: center;
+  align-items: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  /* margin-top: 2rem; */
+  margin-bottom: 2rem;
+  height: 60vh;
+  
+}
+.stathome__card {
+  background-color: #228b83;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  object-fit: contain;
+  height: 20vh;
+  /* margin-bottom: 2rem; */
+}
+.stathome__headingcontainer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 3rem;
+  margin-left: 4rem;
+ 
+ 
+ 
+}
+.stathome__img {
+  height: 80%;
+  width: 50%;
+}
+/* .stathome__swiper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+} */
+.stathome__div {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.stathome__quantity {
+  background-color: #3fbdb3;
+  display: flex;
+  justify-content: flex-end;
+  width: fit-content;
+  float: right;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+  /* padding-left: 2rem; */
+  padding-right: 1.2rem;
+  height: 2.5vh;
+  
+}
+.stathome__info {
+  padding-left: 15px;
+  color: white;
+  font-size: 20px;
+}
+.stathome__button {
+  background-color: #3fbdb3;
+  border-radius: 50%;
+  width: 20px;
+  float: right;
+  border-color: white;
+  margin-top: 1.5px;
+  color: white;
+  
+}
+.stathome__value {
+  display: inline;
+  flex-direction: row;
+  background-color: white;
+  color: black;
+  width: 20%;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.8rem;
+  
+  
+}
+.stathome__boxcontainer {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  position: relative;
+  top: -48px;
+  left: 25px;
+  margin-left: 6rem;
+} 
+.stathome__navbar {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: hsl(175, 50%, 49%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+  border-bottom: 0.35rem solid white;
+}
+.stathome__navLogo {
+  text-align: center;
+}
+.Logo {
+  margin-left: 2rem;
+  height: 3.1rem;
+  width: 3.1rem;
+}
+.stathome__navbtns {
+  display: flex;
+  justify-content: space-between;
+}
+.stathome__navbtns li Button {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", "san serif";
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.stathome__navbtns li {
+  list-style: none;
+  margin-right: 2rem;
+}
+.stathome_carticon {
+  color: white;
+  height: 5vh;
+  width: auto;
+}
+.stathome_cartcontainer{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  
+}
+
+
+.stathome__btncontainer{
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  margin-top: 0.3rem;
+}
+.stathome__infocontainer{
+  display: grid;
+  grid-template-rows: 0.4fr;
+ 
+}
+.link{
+    text-decoration: none;
+}
