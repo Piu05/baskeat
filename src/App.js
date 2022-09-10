@@ -36,7 +36,7 @@ function App() {
               <SignUp />
             </Route>
             <Route exact path="/stathome">
-              <StatHome/>
+              <StatHome />
             </Route>
             <Route exact path="/statcart">
               <StatCart />
@@ -60,9 +60,13 @@ function App() {
             <Route exact path="/home">
               <Home />
             </Route>
+            <Route exact path="/Cant">
+              <CantHome />
+            </Route>
           </Switch>
         </div>
       </Router>
+      //{" "}
     </Context.Provider>
   );
 }
