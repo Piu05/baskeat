@@ -5,6 +5,7 @@
 body {
   background: #254e58;
 }
+
 .navbar {
   width: 100%;
   position: fixed;
@@ -18,22 +19,27 @@ body {
   padding: 0.3em;
   border-bottom: 0.35rem solid white;
 }
+
 .navLogo {
   text-align: center;
 }
+
 .Logo {
   margin-left: 2rem;
   height: 3.1rem;
   width: 3.1rem;
 }
+
 .li {
   align-items: center;
   text-decoration: none;
 }
+
 .navbtns {
   display: flex;
   justify-content: space-between;
 }
+
 .navbtns li Button {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -42,24 +48,29 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .navbtns li {
   list-style: none;
   margin-right: 2rem;
 }
+
 .mainSection {
   margin-top: 7rem;
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
+
 .Admin {
   height: 35rem;
   width: 35rem;
 }
+
 .right {
   margin-top: 4rem;
   margin-right: 4.5rem;
 }
+
 .box {
   position: relative;
   display: grid;
@@ -77,21 +88,25 @@ body {
   text-align: center;
   box-shadow: 8px 22px 35px #133330;
 }
+
 .user {
   height: 4rem;
   width: 4rem;
   margin-top: -2.5rem;
 }
+
 .adminText {
   font-size: 2rem;
   color: black;
   opacity: 0.5;
 }
+
 .visibility {
   height: 1.5rem;
   width: 1.5rem;
   opacity: 0.5;
 }
+
 .loginButn {
   background: hsl(175, 50%, 49%) !important;
   font-family: "Barlow Semi Condensed", "san-serif" !important;
@@ -107,10 +122,10 @@ body {
   font-family: "Barlow Semi Condensed", "sans-serif" !important;
 }
 
-.subtn{
+.subtn {
   color: hsl(175, 50%, 49%);
 }
 
-.subtn:hover{
+.subtn:hover {
   color: hsl(175, 57%, 42%);
 }

@@ -4,6 +4,7 @@
 body {
   background: #254e58;
 }
+
 .navbar {
   width: 100%;
   position: fixed;
@@ -17,22 +18,27 @@ body {
   padding: 0.3em;
   border-bottom: 0.35rem solid white;
 }
+
 .navLogo {
   text-align: center;
 }
+
 .Logo {
   margin-left: 2rem;
   height: 3.1rem;
   width: 3.1rem;
 }
+
 .li {
   align-items: center;
   text-decoration: none;
 }
+
 .navbtns {
   display: flex;
   justify-content: space-between;
 }
+
 .navbtns li Button {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -41,16 +47,19 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .navbtns li {
   list-style: none;
   margin-right: 2rem;
 }
+
 .mainBody {
   margin-top: 7rem;
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
+
 .mainBox {
   position: relative;
   display: grid;
@@ -68,19 +77,23 @@ body {
   text-align: center;
   box-shadow: 8px 22px 35px #133330;
 }
+
 .user {
   height: 4rem;
   width: 4rem;
   margin-top: -2.5rem;
 }
+
 .signUpText {
   font-size: 2.5rem;
   color: black;
   opacity: 0.5;
 }
-.signButton{
+
+.signButton {
   margin-top: -1.3rem;
 }
+
 .signButn {
   background: hsl(175, 50%, 49%) !important;
   font-family: "Barlow Semi Condensed", "san-serif" !important;
@@ -97,6 +110,7 @@ body {
   text-align: center;
   justify-items: center;
 }
+
 .inputContainer {
   position: relative;
   height: 2.5rem;
@@ -104,6 +118,7 @@ body {
   margin-bottom: 17px;
   margin-top: 2px;
 }
+
 .input {
   position: relative;
   top: 0px;
@@ -119,9 +134,11 @@ body {
   z-index: 1;
   background-color: white;
 }
+
 ::placeholder {
   color: hsl(175, 50%, 49%);
 }
+
 ::placeholder {
   position: absolute;
   top: 10px;
@@ -133,7 +150,8 @@ body {
   transition: 0.5s;
   z-index: 10;
 }
-.input:focus + ::placeholder {
+
+.input:focus+ ::placeholder {
   top: -7px;
   left: 3px;
   z-index: 10;
@@ -142,11 +160,13 @@ body {
   color: hsl(175, 50%, 49%);
   background-color: white;
 }
+
 .input:focus {
   border: 2px solid hsl(175, 50%, 49%);
   background-color: white;
 }
-.input:not(:placeholder-shown) + ::placeholder {
+
+.input:not(:placeholder-shown)+ ::placeholder {
   top: -7px;
   left: 3px;
   z-index: 10;
@@ -155,7 +175,8 @@ body {
   color: hsl(175, 50%, 49%);
   background: white;
 }
-.label:hover{
+
+.label:hover {
   cursor: text;
 }
 
@@ -166,10 +187,10 @@ body {
   font-family: "Barlow Semi Condensed", "sans-serif" !important;
 }
 
-.logbtn{
+.logbtn {
   color: hsl(175, 50%, 49%);
 }
 
-.logbtn:hover{
+.logbtn:hover {
   color: hsl(175, 57%, 42%);
 }

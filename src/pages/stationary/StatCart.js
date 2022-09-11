@@ -13,6 +13,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
 import { Link as MaterialLink } from "@mui/material";
 import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
 // import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { AiOutlineTag } from "react-icons/ai";
 import Context from "../../Context";
@@ -227,7 +228,7 @@ function StatCart() {
             );
         } else if (selected === "Checkout") {
             return (
-                <>
+                <div className="statcart__checkoutcontainer">
                     <div className="statcart__table">
                         <TableContainer>
                             <Table sx={{ minWidth: 100 }} aria-label="simple table">
@@ -274,8 +275,111 @@ function StatCart() {
                                 <TableCell align="right">{total}</TableCell>
                             </TableRow>
                         </TableContainer>
+                        </div>
+                        <div>
+                        <div className="Cart-payment">
+            <div className="Cart-total">
+              <h1 className="totalHeading">TOTAL:</h1>
+              <div className="amount-card">
+                <h1 className="amountHeading">{total}</h1>
+              </div>
+            </div>
+            <div className="Cart-cardInfo">
+              <div className="Card-body">
+                <div className="Card-opt">
+                  <div className="visa-card">
+                    <Button>
+                      <img
+                        src={require("../canteen/visa.png")}
+                        alt="payPic"
+                        className="Pay-pic"
+                      />
+                    </Button>
+                  </div>
+                  <div className="gpay-card">
+                    <Button>
+                      <img
+                        src={require("../canteen/gpay.png")}
+                        alt="payPic"
+                        className="Pay-pic"
+                      />
+                    </Button>
+                  </div>
+                  <div className="paytm-card">
+                    <Button>
+                      <img
+                        src={require("../canteen/paytm.png")}
+                        alt="payPic"
+                        className="Pay-pic"
+                      />
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <div className="carddetails__container">
+              <div className="Card-info">
+                <div className="Card-no">
+                  <TextField
+                    fullWidth
+                    id="Card-no"
+                    label="Card no."
+                    variant="outlined"
+                    margin="normal"
+                    size="small"
+                  />
+                </div>
+                
+                <div className="Card-name">
+                  <TextField
+                    fullWidth
+                    id="Card-no"
+                    label="Name On Card"
+                    variant="outlined"
+                    margin="normal"
+                    size="small"
+                  />
+                </div>
+                <div className="Card-date">
+                  <TextField
+                    fullWidth
+                    id="Card-no"
+                    label=""
+                    variant="outlined"
+                    type={"date"}
+                    margin="normal"
+                    size="small"
+                    helperText="Expy. Date"
+                  />
+                </div>
+                <div className="CVV">
+                  <TextField
+                    fullWidth
+                    //   id="Card-no"
+                    label="CVV"
+                    variant="outlined"
+                    margin="normal"
+                    size="small"
+                  />
+                </div>
+              </div>
+              <div className="Card-pay">
+                <Button
+                  className="PayBtn"
+                  style={{
+                    borderRadius: 35,
+                    backgroundColor: "#34A853",
+                    padding: "2px 36px",
+                  }}
+                >
+                  <h1>Pay</h1>
+                </Button>
+              </div>
+              </div>
+            </div>
+          </div>
+                       
                     </div>
-                </>
+                </div>
             );
         } else if (selected === "Complete") {
             return (
