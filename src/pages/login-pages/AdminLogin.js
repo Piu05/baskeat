@@ -13,10 +13,10 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import auth from "../../firebase";
+import app from "../../firebase";
 
 export default function InputAdornments() {
-  const auth = getAuth(auth);
+  const auth = getAuth(app);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

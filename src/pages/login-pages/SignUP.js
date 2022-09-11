@@ -10,11 +10,12 @@ import { Box } from "@mui/system";
 // import TextField from "@mui/material/TextField";
 
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import auth from "../../firebase";
+// import auth from "../../firebase";
+import app from "../../firebase";
 import { useState } from "react";
 
 export default function SignUP() {
-  const auth = getAuth(auth);
+  const auth = getAuth(app);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

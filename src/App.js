@@ -11,7 +11,6 @@ import StatCart from "./pages/stationary/StatCart";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Clgsearch from "./pages/college/Clgsearch";
 import Addcollege from "./pages/college/Addcollege";
-import Home from "./pages/canteen/Home.js";
 import Context from "./Context";
 import { useState } from "react";
 
@@ -40,10 +39,6 @@ function App() {
             <Route exact path="/statcart">
               <StatCart />
             </Route>
-
-            <Route exact path="/Cant">
-              <CantHome />
-            </Route>
             <Route exact path="/CantMenu">
               <CantMenu />
             </Route>
@@ -56,16 +51,12 @@ function App() {
             <Route exact path="/Addcollege">
               <Addcollege />
             </Route>
-            <Route exact path="/home">
-              <Home />
-            </Route>
             <Route exact path="/Cant">
               <CantHome />
             </Route>
           </Switch>
         </div>
       </Router>
-      //{" "}
     </Context.Provider>
   );
 }
