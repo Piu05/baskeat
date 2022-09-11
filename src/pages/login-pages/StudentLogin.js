@@ -138,7 +138,7 @@ export default function InputAdornments() {
               </div>
               <div>
                 <Button variant="contained" className="loginButn">
-                  Login Now
+                  <Link to="/College">Login Now</Link>
                 </Button>
               </div>
               <div className="accsup">
