@@ -1,4 +1,4 @@
-# BaskEat ![BaskEat](./public/BaskEat.png)
+# BaskEat <img src="./public/BaskEat.png"  width="50" height="50">
 
 Hungry but only have a 10-min break? We got you!
 
