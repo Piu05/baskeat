@@ -6,7 +6,13 @@ import { Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { Link } from "react-router-dom";
 import { fooditem, foodPics } from "./Home.js";
-import Context from "../../Context";
+import CantContext from "../../Context";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
 
 function BagIcon(props) {
   return (
@@ -54,6 +60,31 @@ export default function Cart() {
       className="item-pic"
     />,
   ];
+
+  const { checkout } = useContext(CantContext);
+  //   const [rowss, setRowss] = React.useState([]);
+  const [total, setTotal] = React.useState(0);
+
+  const rowss = [
+    createData("Veg Pizza", 100, 100.0),
+    createData("Non-Veg Fried Rice", 110, 110),
+    createData("Non-Veg Fried Chowmein", 90, 90),
+  ];
+
+  function createRows() {
+    let total = 0;
+
+    let temp = checkout?.map((e) => {
+      total = total + e.subtotal;
+      return createData(e.name, e.price, e.subtotal);
+    });
+    setTotal(total);
+    // setRowss(temp);
+  }
+  useEffect(() => {
+    createRows();
+  }, [checkout]);
+
   // const items = fooditem;
   // const value = 0;
 
@@ -94,12 +125,67 @@ export default function Cart() {
             className="Bag-pic"
           />
           <h1 className="Bag-heading">Bag</h1>
-          <div className="Cart-bag"></div>
+          <div className="Cart-bag">
+            <div className="statcart__table">
+              <TableContainer>
+                <Table sx={{ minWidth: 100 }} aria-label="simple table">
+                  <TableHead
+                    style={{ borderbottom: "1rem", borderColor: "white" }}
+                  >
+                    <TableRow>
+                      <TableCell>
+                        <h3>Products</h3>
+                      </TableCell>
+                      <TableCell align="right">
+                        <h3>Price&nbsp;(Rs)</h3>
+                      </TableCell>
+                      <TableCell align="right">
+                        <h3>Subtotal&nbsp;(Rs)</h3>
+                      </TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {rowss?.map((rowss) => (
+                      <TableRow key={rowss.Products}>
+                        <TableCell
+                          component="th"
+                          scope="row"
+                          sx={{
+                            border: "none",
+                          }}
+                        >
+                          {rowss.Products}
+                        </TableCell>
+                        <TableCell
+                          align="right"
+                          sx={{
+                            border: "none",
+
+                            margin: "4rem",
+                          }}
+                        >
+                          {rowss.Price}
+                        </TableCell>
+                        <TableCell
+                          align="right"
+                          sx={{
+                            border: "none",
+                          }}
+                        >
+                          {rowss.Subtotal}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </div>
+          </div>
           <div className="Cart-payment">
             <div className="Cart-total">
               <h1 className="totalHeading">TOTAL:</h1>
               <div className="amount-card">
-                <h1 className="amountHeading">1000</h1>
+                <h1 className="amountHeading">300</h1>
               </div>
             </div>
             <div className="Cart-cardInfo">
