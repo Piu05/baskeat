@@ -59,7 +59,7 @@ function App() {
                 <Addcollege />
               </Route>
               <Route exact path="/home">
-                <Home />
+                <CantHome />
               </Route>
               <Route exact path="/Cant">
                 <CantHome />
