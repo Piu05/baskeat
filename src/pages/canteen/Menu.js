@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import CantContext from "../../Context";
 import "../canteen/Menu.css";
 import { Button } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import SvgIcon from "@mui/material/SvgIcon";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function BagIcon(props) {
   return (
@@ -14,6 +16,27 @@ function BagIcon(props) {
 }
 
 export default function Menu() {
+  const Rates = [100, 120, 80, 90, 90, 110];
+  const Recipe = [
+    "Consists of jalepeno, capsicum, onion , paneer , tomato and cheese.",
+    "Consists of Chicken ,jalepeno, capsicum, onion , paneer , tomato and  cheese",
+    "Consists of jalepeno, capsicum, onion and some more vegies.",
+    "Consists of capsicum, onion , paneer and tomato.",
+    "Consists of jalepeno, capsicum, onion and some more vegies with some pieces of chicken.",
+    "Consists of capsicum, onion , paneer and tomato with some pieces of chicken.",
+  ];
+  const fooditem = [
+    "Veg Pizza",
+    "Non-Veg Pizza",
+    "Chowmein",
+    "Fried Rice",
+    "Non-Veg Fried Rice",
+    "Non-Veg Chowmein",
+  ];
+  const [item1, setitem1] = useState(0);
+
+  const { setCheckout } = useContext(CantContext);
+
   const cardBackground1 = {
     backgroundColor: "#019138",
   };
@@ -53,7 +76,67 @@ export default function Menu() {
             </Link>
             <Link to="/Cantcart" className="link">
               <Button>
-                <BagIcon sx={{ fontSize: 30 }} />
+                <BagIcon
+                  onClick={() => {
+                    let temp = [];
+                    if (item1 > 0) {
+                      let item = {
+                        name: fooditem[0],
+
+                        price: Rates[0],
+                        subtotal: Rates[0],
+                      };
+                      temp = [...temp, item];
+                    }
+                    if (item1 > 0) {
+                      let item = {
+                        name: fooditem[1],
+
+                        price: Rates[1],
+                        subtotal: Rates[1],
+                      };
+                      temp = [...temp, item];
+                    }
+                    if (item1 > 0) {
+                      let item = {
+                        name: fooditem[2],
+
+                        price: Rates[2],
+                        subtotal: Rates[2],
+                      };
+                      temp = [...temp, item];
+                    }
+                    if (item1 > 0) {
+                      let item = {
+                        name: fooditem[3],
+
+                        price: Rates[3],
+                        subtotal: Rates[3],
+                      };
+                      temp = [...temp, item];
+                    }
+                    if (item1 > 0) {
+                      let item = {
+                        name: fooditem[4],
+
+                        price: Rates[5],
+                        subtotal: Rates[5],
+                      };
+                      temp = [...temp, item];
+                    }
+                    if (item1 > 0) {
+                      let item = {
+                        name: fooditem[5],
+
+                        price: Rates[4],
+                        subtotal: Rates[4],
+                      };
+                      temp = [...temp, item];
+                    }
+                    setCheckout(temp);
+                  }}
+                  sx={{ fontSize: 30 }}
+                />
               </Button>
             </Link>
           </li>

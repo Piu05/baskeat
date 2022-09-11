@@ -1,12 +1,12 @@
 import { Button } from "@mui/material";
-// import React, { useContext } from "react";
+import React, { useContext } from "react";
 import "./Home.css";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import Avatar from "@mui/material/Avatar";
 // import { deepPurple } from "@mui/material/colors";
 
 import SvgIcon from "@mui/material/SvgIcon";
-// import Context from "../../Context";
+import CantContext from "../../Context";
 import { useState } from "react";
 
 function BagIcon(props) {
@@ -68,12 +68,12 @@ export default function CantHome() {
     "Consists of capsicum, onion , paneer and tomato with some pieces of chicken.",
   ];
 
-  //   function handleClicks(event) {
-  //     event.preventDefault();
-  //     setSelected(event);
-  //   }
+  // function handleClicks(event) {
+  //   event.preventDefault();
+  //   setSelected(event);
+  // }
 
-  //   const [selected, setSelected] = React.useState("Cart");
+  // const [selected, setSelected] = React.useState("Cart");
 
   const [rate, SetRate] = useState(Rates[0]);
 
@@ -83,9 +83,9 @@ export default function CantHome() {
 
   const [recipe, SetRecipe] = useState(Recipe[0]);
 
-  //   const [item1, setitem1] = useState(0);
+  const [item1, setitem1] = useState(0);
 
-  //   const { setCheckout } = useContext(Context);
+  const { setCheckout } = useContext(CantContext);
   //   const history = useHistory();
   var itemValue = 0;
 
@@ -120,7 +120,67 @@ export default function CantHome() {
               </Link>
               <Link to="/Cantcart" className="link">
                 <Button>
-                  <BagIcon sx={{ fontSize: 30 }} />
+                  <BagIcon
+                    onClick={() => {
+                      let temp = [];
+                      if (item1 > 0) {
+                        let item = {
+                          name: "Veg Pizza",
+
+                          price: 100,
+                          subtotal: 100,
+                        };
+                        temp = [...temp, item];
+                      }
+                      if (item1 > 0) {
+                        let item = {
+                          name: fooditem[1],
+
+                          price: Rates[1],
+                          subtotal: Rates[1],
+                        };
+                        temp = [...temp, item];
+                      }
+                      if (item1 > 0) {
+                        let item = {
+                          name: fooditem[2],
+
+                          price: Rates[2],
+                          subtotal: Rates[2],
+                        };
+                        temp = [...temp, item];
+                      }
+                      if (item1 > 0) {
+                        let item = {
+                          name: fooditem[3],
+
+                          price: Rates[3],
+                          subtotal: Rates[3],
+                        };
+                        temp = [...temp, item];
+                      }
+                      if (item1 > 0) {
+                        let item = {
+                          name: fooditem[4],
+
+                          price: Rates[5],
+                          subtotal: Rates[5],
+                        };
+                        temp = [...temp, item];
+                      }
+                      if (item1 > 0) {
+                        let item = {
+                          name: fooditem[5],
+
+                          price: Rates[4],
+                          subtotal: Rates[4],
+                        };
+                        temp = [...temp, item];
+                      }
+                      setCheckout(temp);
+                    }}
+                    sx={{ fontSize: 30 }}
+                  />
                 </Button>
               </Link>
             </li>
@@ -239,9 +299,9 @@ export default function CantHome() {
                   <h1>{itemHeading}</h1>
                   <p>{recipe}</p>
                   <Button
-                  // onClick={() => {
-                  //   setitem1((item1 = itemValue));
-                  // }}
+                    onClick={() => {
+                      setitem1((item1 = itemValue));
+                    }}
                   >
                     Add to Bag+
                   </Button>
