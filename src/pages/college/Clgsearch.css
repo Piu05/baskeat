@@ -123,7 +123,7 @@ body {
 }
 .content .canteen {
   position: absolute;
-  bottom: 12.5rem;
+  bottom: 15.5rem;
   left: 10rem;
   display: flex;
   align-content: center;
@@ -135,7 +135,7 @@ body {
 }
 .content .Stat {
   position: fixed;
-  bottom: 12.5rem;
+  bottom: 15.5rem;
   right: 10rem;
   display: flex;
   align-content: center;
