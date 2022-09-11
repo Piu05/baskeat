@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+
+body {
+  background: #254e58;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: hsl(175, 50%, 49%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+  border-bottom: 0.35rem solid white;
+}
+
+.navLogo {
+  text-align: center;
+}
+
+.Logo {
+  margin-left: 2rem;
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+.navbtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbtns li Button {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", "san serif";
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbtns li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.section {
+  margin-top: 4.5rem;
+}
+
+.wlcm {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: "Nunito", "san serif";
+  margin: 1.1rem;
+  padding: 0.5rem;
+}
+
+.BgImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.mainBtns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainBtns Button {
+  background: rgb(255, 255, 255);
+  text-align: center;
+  color: hsl(175, 50%, 49%);
+  font-family: "Nunito", "san serif";
+  font-size: 1.9rem;
+  padding: 1.1rem 1.3rem 1.1rem 1.3rem;
+  margin-top: 20rem;
+  border-radius: 15px;
+}
+
+.link {
+  text-decoration: none;
+}

@@ -1,5 +1,10 @@
 import "./App.css";
+import HeroPage from "./pages/login-pages/Heropage";
+import AdminLogin from "./pages/login-pages/AdminLogin";
+import StudentLogin from "./pages/login-pages/StudentLogin";
+import SignUp from "./pages/login-pages/SignUP";
 import StatHome from "./pages/stationary/StatHome";
+<<<<<<< HEAD
 // import HeroPage from "./pages/login-pages/heroPage";
 // import CantHome from "./pages/canteen/Home";
 // import CantMenu from "./pages/canteen/Menu";
@@ -12,6 +17,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import Addcollege from "./pages/college/Addcollege";
 // import SignUp from "./pages/login-pages/signUp";
 // import Home from "./pages/canteen/Home.js";
+=======
+import CantHome from "./pages/canteen/Home";
+import CantMenu from "./pages/canteen/Menu";
+import CantCart from "./pages/canteen/Cart";
+import StatCart from "./pages/stationary/StatCart";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Clgsearch from "./pages/college/Clgsearch";
+import Addcollege from "./pages/college/Addcollege";
+>>>>>>> 07bf90353b5d2c1b4539bf1d97619552dd1475d3
 import Context from "./Context";
 import { useState } from "react";
 
@@ -40,10 +54,13 @@ function App() {
             <Route exact path="/statcart">
               <StatCart />
             </Route>
+<<<<<<< HEAD
 
             {/* <Route exact path="/Cant">
               <CantHome />
             </Route>
+=======
+>>>>>>> 07bf90353b5d2c1b4539bf1d97619552dd1475d3
             <Route exact path="/CantMenu">
               <CantMenu />
             </Route>
@@ -56,16 +73,16 @@ function App() {
             <Route exact path="/Addcollege">
               <Addcollege />
             </Route>
-            <Route exact path="/home">
-              <Home />
-            </Route>
             <Route exact path="/Cant">
               <CantHome />
             </Route> */}
           </Switch>
         </div>
       </Router>
+<<<<<<< HEAD
       
+=======
+>>>>>>> 07bf90353b5d2c1b4539bf1d97619552dd1475d3
     </Context.Provider>
   );
 }

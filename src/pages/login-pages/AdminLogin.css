@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap");
+
+body {
+  background: #254e58;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: hsl(175, 50%, 49%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+  border-bottom: 0.35rem solid white;
+}
+
+.navLogo {
+  text-align: center;
+}
+
+.Logo {
+  margin-left: 2rem;
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+.li {
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbtns li Button {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", "san serif";
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbtns li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.mainSection {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.Admin {
+  height: 35rem;
+  width: 35rem;
+}
+
+.right {
+  margin-top: 4rem;
+  margin-right: 4.5rem;
+}
+
+.box {
+  position: relative;
+  display: grid;
+  grid-template-rows: 10% 15% 25% 25% 15% 10%;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 24rem;
+  width: 20rem;
+  background: white;
+  color: #c6c5c5;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  font-family: "Barlow Semi Condensed", "sans-serif";
+  text-align: center;
+  box-shadow: 8px 22px 35px #133330;
+}
+
+.user {
+  height: 4rem;
+  width: 4rem;
+  margin-top: -2.5rem;
+}
+
+.adminText {
+  font-size: 2rem;
+  color: black;
+  opacity: 0.5;
+}
+
+.visibility {
+  height: 1.5rem;
+  width: 1.5rem;
+  opacity: 0.5;
+}
+
+.loginButn {
+  background: hsl(175, 50%, 49%) !important;
+  font-family: "Barlow Semi Condensed", "san-serif" !important;
+  text-transform: capitalize !important;
+  font-size: large !important;
+  border-radius: 4rem !important;
+  padding: 0.2rem 3rem !important;
+}
+
+.accsup {
+  font-size: 1rem;
+  color: #857f7f !important;
+  font-family: "Barlow Semi Condensed", "sans-serif" !important;
+}
+
+.subtn {
+  color: hsl(175, 50%, 49%);
+}
+
+.subtn:hover {
+  color: hsl(175, 57%, 42%);
+}
