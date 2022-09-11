@@ -31,15 +31,18 @@ export default function Clgsearch() {
 
           <div className="Navbtns">
             <li>
-            <Link to="/College" className="link">
+            <Link to="/College" className="Addlink">
               <Button>Home</Button>
             </Link>
-            <Link to="/Cant" className="link">
+            <Link to="/Cant" className="Addlink">
               <Button>Canteen</Button>
             </Link>
-            <Link to="/stathome" className="link">
+            <Link to="/stathome" className="Addlink">
               <Button>Stationary</Button>
             </Link>
+            {/* <Link to="/" className="Addlink"> */}
+              <Button>Logout</Button>
+            {/* </Link> */}
             </li>
           </div>
         </div>

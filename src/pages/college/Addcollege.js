@@ -12,7 +12,7 @@ export default function Addcollege() {
         <div className="container">
           <div className="Navbar text-center">
             <div className="NavLogo">
-            <Link to="/College" className="link">
+            <Link to="/College" className="Addlink">
               <img
                 src={require("../canteen/BaskEat.png")}
                 alt="baskEat"
@@ -23,13 +23,13 @@ export default function Addcollege() {
   
             <div className="Navbtns">
               <li>
-              <Link to="/College" className="link">
+              <Link to="/College" className="Addlink">
                 <Button>Home</Button>
               </Link>
-              <Link to="/Cant" className="link">
+              <Link to="/Cant" className="Addlink">
                 <Button>Canteen</Button>
               </Link>
-              <Link to="/StatHome" className="link">
+              <Link to="/StatHome" className="Addlink">
                 <Button>Stationary</Button>
               </Link>
               </li>
