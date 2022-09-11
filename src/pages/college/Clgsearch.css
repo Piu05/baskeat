@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+body {
+  background: #254e58;
+}
+.Navbar {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: hsl(175, 50%, 49%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+  border-bottom: 0.35rem solid white;
+}
+.NavLogo {
+  text-align: center;
+}
+.Logo {
+  margin-left: 2rem;
+  height: 3.1rem;
+  width: 3.1rem;
+}
+.Navbtns {
+  display: flex;
+  justify-content: space-between;
+}
+.Navbtns li Button {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", "san serif" !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.Navbtns li {
+  list-style: none;
+  margin-right: 2rem;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.search-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.searchbar {
+  position: absolute !important;
+  top: 30rem;
+  min-width: 300px;
+  left: 25rem;
+  background: #fff;
+  height: 28px;
+  border-radius: 30px;
+  padding: 0.3rem 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.searchbar .searchlist{
+  background-color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.items {
+  text-align: left;
+  margin: 3px;
+  margin-top: 11px;
+  color: #fff;
+  width: 260px;
+}
+.items:hover{
+  background-color: #228b83;
+}
+.searchbar .search {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 240px;
+  padding-bottom: 8px;
+}
+.search::placeholder {
+  color: #254e58;
+}
+.searchbtn .searchButton {
+  color: white;
+  min-height: 14.5px;
+  min-width: 14.5px;
+  border-radius: 50%;
+  background: #228b83;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin-top: -0.2rem;
+  margin-bottom: 0.3rem;
+}
+.addbtn {
+  position: absolute;
+  top: 30rem;
+  right: 25rem;
+}
+.addbtn .Addbutton {
+  background: #228b83;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: large;
+  border-radius: 30px;
+  padding: 0.2rem 1.5rem;
+}
+.content .canteen {
+  position: absolute;
+  bottom: 12.5rem;
+  left: 10rem;
+  display: flex;
+  align-content: center;
+  padding: 0.5rem;
+}
+.canteen .canteenpic {
+  border-radius: 1rem;
+  background-color: #254e58;
+}
+.content .Stat {
+  position: fixed;
+  bottom: 12.5rem;
+  right: 10rem;
+  display: flex;
+  align-content: center;
+  padding: 0.5rem;
+}
+.Stat .Statpic {
+  border-radius: 1rem;
+  background-color: #254e58;
+}
+.Addlink {
+  text-decoration: none;
+}
