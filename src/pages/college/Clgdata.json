@@ -1,0 +1,20 @@
+[
+    {
+        "clgname":"GNIT",
+        "clgid":"ED1231",
+        "clgaddress":"Greater Noida",
+        "clgpin":111111
+    },
+    {
+        "clgname":"Amity University",
+        "clgid":"ED1232",
+        "clgaddress":"Noida",
+        "clgpin":222222
+    },
+    {
+        "clgname":"Delhi Technical Campus",
+        "clgid":"ED1233",
+        "clgaddress":"Greater Noida",
+        "clgpin":333333
+    }
+]
