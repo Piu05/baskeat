@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+
+
+body{
+    background-color: #fae6b1;
+}
+.Cart-Container{
+    background-color: #fae6b1;
+    width: 100%;
+    height: 100rem;
+}
+.Cart-Navbar{
+    z-index: 1;
+    /* margin: 1rem; */
+    position: fixed;
+    display: flex;
+    padding: 10px;
+    background-color: #3fbdb3;
+    width: 100vw;
+    /* text-align: start; */
+    /* border-bottom: 2px solid white; */
+    border-bottom: 0.35rem solid white;
+}
+.Cart-logo{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 60%;
+    margin-left: 2rem;
+}
+.logo-pic{
+    height: 3.1rem;
+    width: 3.1rem;
+}
+.Cart-btns li{
+    padding-top:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.Cart-btns li Button{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5rem;
+    font-family: "Nunito", "san serif";
+
+}
+.Cart-mainBody{
+    
+    display: grid;
+    grid-template-columns: 0% 40% 60%;
+}
+.Bag-pic{
+    margin-top: 2rem;
+    position: fixed;
+    height: 90%;
+    width: 80%;
+}
+.Bag-heading{
+    margin: 10rem 16rem;
+    color: #3B93AA;
+    z-index: 1;
+    font-size: 3rem;
+}
+
+.Cart-bag{
+    z-index: 1;
+    /* background-color: red; */
+    height: 21rem;
+    width: 26rem;
+    margin: 20rem 6rem;
+}
+.Cart-bag-items{
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+}
+.itemName{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+.itemName h1{
+    color: orangered;
+}
+.item-pic{
+    height: 3rem;
+    width: 3rem;
+}
+
+.Cart-payment{
+    z-index: 1;
+    margin-top: 2.5rem;
+    /* background-color: yellow; */
+}
+.Cart-total{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    justify-items: center;
+    align-items: center;
+    /* background-color: royalblue; */
+}
+.amount-card{
+    display: flex;
+    background-color: aquamarine;
+    width: 15rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+.totalHeading{
+    color: #3B93AA;
+    font-size: 4rem;
+}
+.amountHeading{
+    color: #3B93AA;
+    font-size: 3rem;
+}
+.Cart-cardInfo{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-color: #3B93AA;
+    align-items: center;
+    justify-items: center;
+    border-radius: 2rem;
+    margin: 1rem;
+    margin-top: -1rem;
+}
+.Card-opt{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: rebeccapurple; */
+    align-items: center;
+    justify-items: center;
+    height: 8rem;
+}
+
+.Pay-pic{
+    width: 8rem;
+    height: 8rem;
+}
+.Card-info{
+    display: grid;
+    background-color: #B3DEE5;
+    border-radius: 2rem;
+    align-items: center;
+    justify-items: center;
+    width: 30rem;
+    margin: 1rem;
+    
+    /* border-radius: 2rem; */
+}
+
+.Card-name fieldset{
+    border-radius: 20rem;
+    background-color: white;
+}
+.Card-date fieldset{
+    border-radius: 20rem;
+    border: 2px solid white;
+}
+.CVV fieldset{
+    border-radius: 20rem;
+    background-color: white;
+}
+.Card-no fieldset{
+    border-radius: 20rem;
+    background-color: white;
+}
+.PayBtn h1{
+    color: aliceblue;
+}
